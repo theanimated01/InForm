@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InForm — Learn form. Feel the feedback.</title>
+  <meta name="description" content="Joint trackers with haptics that guide your gym form in real time. See exactly what went wrong rep by rep." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="#" class="logo">InForm</a>
+    <nav>
+      <a href="#how-it-works">How it works</a>
+      <a href="#video">Video</a> 
+      <a href="#process">Process</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-tag">Wearable form coaching</p>
+        <h1>Feel every rep.<br />Fix every mistake.</h1>
+        <p class="hero-desc">
+          Joint trackers with haptics track your movement in real time and vibrate on the joints that are off—so you correct your form as you lift. After your set, get a clear rep-by-rep report and know exactly what to fix next time.
+        </p>
+        <div class="hero-cta">
+          <span class="badge">Design vision</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="mock-device mock-trackers">
+          <div class="mock-screen">
+            <div class="figure-wrap">
+              <svg class="figure-svg" viewBox="0 0 200 340" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <!-- Barbell: bar + weights -->
+                <line class="figure-bar" x1="28" y1="188" x2="172" y2="188" stroke-width="8" stroke-linecap="round" />
+                <circle class="figure-weight" cx="18" cy="188" r="20" />
+                <circle class="figure-weight" cx="182" cy="188" r="20" />
+                <!-- Body: filled mannequin style -->
+                <circle class="figure-head" cx="100" cy="36" r="24" />
+                <rect class="figure-neck" x="92" y="55" width="16" height="14" rx="4" />
+                <rect class="figure-torso" x="78" y="68" width="44" height="152" rx="12" />
+                <!-- Limbs (thick strokes) -->
+                <line class="figure-limb" x1="78" y1="88" x2="56" y2="132" stroke-width="14" stroke-linecap="round" />
+                <line class="figure-limb" x1="56" y1="132" x2="68" y2="188" stroke-width="12" stroke-linecap="round" />
+                <line class="figure-limb" x1="122" y1="88" x2="144" y2="132" stroke-width="14" stroke-linecap="round" />
+                <line class="figure-limb" x1="144" y1="132" x2="132" y2="188" stroke-width="12" stroke-linecap="round" />
+                <line class="figure-limb" x1="86" y1="218" x2="70" y2="272" stroke-width="14" stroke-linecap="round" />
+                <line class="figure-limb" x1="70" y1="272" x2="66" y2="328" stroke-width="12" stroke-linecap="round" />
+                <line class="figure-limb" x1="114" y1="218" x2="130" y2="272" stroke-width="14" stroke-linecap="round" />
+                <line class="figure-limb" x1="130" y1="272" x2="134" y2="328" stroke-width="12" stroke-linecap="round" />
+                <!-- Joint tracker dots: spine, elbows, wrists, knees -->
+                <circle class="tracker-dot" cx="100" cy="145" r="8" />
+                <circle class="tracker-dot" cx="58" cy="132" r="8" />
+                <circle class="tracker-dot" cx="142" cy="132" r="8" />
+                <circle class="tracker-dot" cx="68" cy="188" r="8" />
+                <circle class="tracker-dot" cx="132" cy="188" r="8" />
+                <circle class="tracker-dot" cx="72" cy="272" r="8" />
+                <circle class="tracker-dot" cx="128" cy="272" r="8" />
+              </svg>
+            </div>
+            <p class="mock-caption">Joint tracking + haptic feedback</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section how-it-works">
+      <h2>How it works</h2>
+      <div class="steps">
+        <article class="step">
+          <span class="step-num">1</span>
+          <h3>Wear the trackers</h3>
+          <p>Straps on wrists, elbows, knees, and spine. Lightweight and discreet, stays out of your way.</p>
+        </article>
+        <article class="step">
+          <span class="step-num">2</span>
+          <h3>Real-time haptic feedback</h3>
+          <p>When a joint drifts from ideal form, that tracker vibrates. You feel which part to correct-without looking at a screen.</p>
+        </article>
+        <article class="step">
+          <span class="step-num">3</span>
+          <h3>Rep-by-rep report</h3>
+          <p>After your set, see which rep had issues, which joints were off, and simple cues to fix them next time.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="video" class="section video-section">
+      <h2>Video</h2>
+      <div class="video-wrap">
+        <iframe src="https://player.vimeo.com/video/1162763203?badge=0&autopause=0&player_id=0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="InForm Concept Video GR4 CS185"></iframe>
+      </div>
+    </section>
+
+    <section id="process" class="section process">
+      <h2>Process</h2>
+      <div class="process-grid">
+        <article class="process-card">
+          <div class="process-card-photo"><img src="images/gr1.png" alt="GR1 Needfinding" /></div>
+          <h3 class="process-card-title">GR1: Needfinding</h3>
+          <p class="process-card-desc">Our needfinding journey in the gym. We conducted interviews with a diverse group of participants to uncover pain points.</p>
+          <a href="https://docs.google.com/presentation/d/1N8Zqg6qe9Y9cZFT5W7mPq57PLVLzoIzEpc_5y7lvhdc/edit?slide=id.g3bba92564d5_0_633#slide=id.g3bba92564d5_0_633" class="process-card-btn" target="_blank" rel="noopener">Slides</a>
+        </article>
+        <article class="process-card">
+          <div class="process-card-photo"><img src="images/gr2.jpg" alt="GR2 Needfinding, POVs, HMWs, Brainstorming & Experience Prototypes" /></div>
+          <h3 class="process-card-title">GR2: Additional Needfinding, POVs, HMWs, Brainstorming & Experience Prototypes</h3>
+          <p class="process-card-desc">We generated POVs and 'How Might We?' questions from our interviews to look deeper into common problems. Then, we brainstormed solutions and picked three to experience prototype, testing the critical assumptions we made in each.</p>
+          <a href="https://docs.google.com/presentation/d/1IpPogOiM388WfgUJFJ92yEUNRcrJiW3lEMWlM6aSnTk/edit?slide=id.g128149aa442_0_27591#slide=id.g128149aa442_0_27591" class="process-card-btn" target="_blank" rel="noopener">Slides</a>
+        </article>
+        <article class="process-card">
+          <div class="process-card-photo"><img src="images/gr3.png" alt="GR3 Website" /></div>
+          <h3 class="process-card-title">GR3: Website</h3>
+          <p class="process-card-desc">You're here right now!</p>
+          <a href="#" class="process-card-btn" download>Website</a>
+        </article>
+        <article class="process-card">
+          <div class="process-card-photo"><img src="images/gr4.png" alt="GR4 Concept Video" /></div>
+          <h3 class="process-card-title">GR4: Concept Video</h3>
+          <p class="process-card-desc">We landed on a solution that best addressed our users' problems: InForm!</p>
+          <a href="https://vimeo.com/1162763203" class="process-card-btn" target="_blank" rel="noopener">Video</a>
+        </article>
+        <article class="process-card">
+          <div class="process-card-photo"><img src="images/gr5.jpg" alt="GR5 Sketching, Low-fi Prototyping & Usability Testing" /></div>
+          <h3 class="process-card-title">GR5: Sketching, Low-fi Prototyping & Usability Testing</h3>
+          <p class="process-card-desc">Our low-fi prototype of InForm. We created task flows and sketched them onto paper to test basic design choices on potential users, grounding our evolving design in real user experiences.</p>
+          <a href="https://docs.google.com/presentation/d/12k7D4-4vyFtqtiII8mjUhsqccr37QtZtDp9OJPEv33o/edit?slide=id.g14d2792e9da_0_8#slide=id.g14d2792e9da_0_8" class="process-card-btn" target="_blank" rel="noopener">Slides</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>InForm — Design vision. Not yet a product.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
