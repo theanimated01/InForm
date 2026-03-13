@@ -197,76 +197,54 @@ body {
 }
 
 .mock-screen {
-  background: var(--bg-card);
+  background: #fff;
   border-radius: var(--radius-md);
   padding: var(--space-lg);
   min-width: 340px;
 }
 
 .figure-wrap {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 420px;
-  background: radial-gradient(ellipse 70% 80% at 50% 50%, var(--accent-glow) 0%, transparent 65%);
+  background: #fff;
   border-radius: var(--radius-md);
 }
 
-.figure-svg {
+.figure-skeleton {
   width: 100%;
   max-width: 280px;
   height: auto;
-  overflow: visible;
+  display: block;
+  position: relative;
+  z-index: 0;
 }
 
-.figure-bar {
-  stroke: var(--text-muted);
-  stroke-width: 8;
-  stroke-linecap: round;
-  opacity: 0.85;
-}
-
-.figure-weight {
-  fill: var(--text-dim);
-  opacity: 0.5;
-}
-
-.figure-head {
-  fill: var(--text-dim);
-  opacity: 0.35;
-}
-
-.figure-neck {
-  fill: var(--text-dim);
-  opacity: 0.3;
-}
-
-.figure-torso {
-  fill: var(--text-dim);
-  opacity: 0.25;
-}
-
-.figure-limb {
-  stroke: var(--text-dim);
-  stroke-linecap: round;
-  opacity: 0.35;
-}
-
-.tracker-dot {
-  fill: var(--accent);
-  stroke: rgba(255, 255, 255, 0.25);
-  stroke-width: 1.5;
-  filter: drop-shadow(0 0 10px var(--accent-glow));
+.figure-wrap .tracker-dot {
+  position: absolute;
+  z-index: 1;
+  width: 14px;
+  height: 14px;
+  margin-left: -7px;
+  margin-top: -7px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 12px var(--accent-glow);
   animation: pulse-opacity 2s ease-in-out infinite;
+  pointer-events: none;
 }
 
-.tracker-dot:nth-child(13) { animation-delay: 0s; }
-.tracker-dot:nth-child(14) { animation-delay: 0.12s; }
-.tracker-dot:nth-child(15) { animation-delay: 0.24s; }
-.tracker-dot:nth-child(16) { animation-delay: 0.36s; }
-.tracker-dot:nth-child(17) { animation-delay: 0.48s; }
-.tracker-dot:nth-child(18) { animation-delay: 0.6s; }
-.tracker-dot:nth-child(19) { animation-delay: 0.72s; }
+/* Position dots over skeleton (left/top % of container); adjust to match your image */
+.tracker-dot--spine   { left: 52.5%; top: 42%; transform: translate(-50%, -50%); animation-delay: 0s; }
+.tracker-dot--elbow-l { left: 34%; top: 22%; transform: translate(-50%, -50%); animation-delay: 0.12s; }
+.tracker-dot--elbow-r { left: 71%; top: 22%; transform: translate(-50%, -50%); animation-delay: 0.24s; }
+.tracker-dot--wrist-l { left: 18.5%; top: 46%; transform: translate(-50%, -50%); animation-delay: 0.36s; }
+.tracker-dot--wrist-r { left: 86.5%; top: 46%; transform: translate(-50%, -50%); animation-delay: 0.48s; }
+.tracker-dot--knee-l  { left: 42%; top: 70%; transform: translate(-50%, -50%); animation-delay: 0.6s; }
+.tracker-dot--knee-r  { left: 62%; top: 70%; transform: translate(-50%, -50%); animation-delay: 0.72s; }
 
 @keyframes pulse-opacity {
   0%, 100% { opacity: 1; }
@@ -412,6 +390,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .process-card-photo {
@@ -449,6 +428,24 @@ body {
   line-height: 1.55;
   margin: var(--space-md) var(--space-lg) 0;
   flex: 1;
+}
+
+.process-card-btns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+  padding: 0 var(--space-lg) var(--space-lg);
+  margin: 0;
+  margin-top: var(--space-md);
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.process-card-btns .process-card-btn {
+  margin: 0;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .process-card-btn {
